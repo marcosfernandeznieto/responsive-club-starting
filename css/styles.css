@@ -1,0 +1,249 @@
+body {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top:0px;
+    overflow: hidden;
+}
+header div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+header div ul {
+    width: 100%;
+    list-style-type: none;
+    height: 100%;
+    margin: 0px; padding: 0px;
+    display: flex;
+    align-items: center;
+}
+header div li {
+    float: left;
+    margin: 0px 15px;
+    text-align:center;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+}
+
+h3 {
+    margin: 0px;
+}
+
+div li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    top: 25%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+li .logo {
+    width: 125px;
+    height: 55px;
+    margin-top: 9px;
+}
+
+#screen1 {
+    clear:both;
+    background: url("../content/screen1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    width: 50%;
+    color: white;
+}
+
+.info {
+    width: auto;
+    padding: 40px;
+}
+
+.info div {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.btn {
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #285779;
+    text-decoration: none;
+}
+
+#screen2 {
+    clear:both;
+    background: url("../content/screen2.jpg")  no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#screen2 .column .info {
+    color: #FFF;
+    text-shadow: 2px 2px #666666;
+}
+
+#screen3 {
+    clear:both;
+    background: url("../content/screen3.jpg")  no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+#screen4 {
+    clear:both;
+    background: url("../content/screen4.jpg")  no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#screen4 .column .info {
+    color: #FFF;
+    text-shadow: 2px 2px #666666;
+}
+
+footer {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-column h5 {
+    margin: 5px 0px;
+}
+
+.footer-column p {
+    margin: 5px 0px;
+}
+
+form input[type="email"]{
+    width:400px;
+    height: 45px;
+    padding: 10px;
+    border-radius:10px;
+}
+
+form input[type="submit"]{
+    width:100px;
+    height: 35px;
+    border-radius:10px;
+    background-color: #285779;
+    color: #FFF;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+footer i {
+    width: 20px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    #screen1 {
+        clear:both;
+        background: url("../content/screen1.jpg") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        flex:100%;
+        overflow: hidden;
+    }
+
+    #screen2 {
+        clear:both;
+        background: url("../content/screen2.jpg")  no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        flex:100%;
+        overflow: hidden;
+    }
+
+    #screen3 {
+        clear:both;
+        background: url("../content/screen3.jpg")  no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        flex:100%;
+        overflow: hidden;
+    }
+
+    #screen4 {
+        clear:both;
+        background: url("../content/screen4.jpg")  no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        flex:100%;
+        overflow: hidden;
+    }
+
+    .column {
+        flex: 100%;
+        color: white;
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: #FFF;
+        margin: 20px 0px;
+        flex:100%;
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+        flex:100%;
+        flex-direction: row;
+    }
+  }
